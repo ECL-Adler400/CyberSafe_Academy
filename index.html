@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutz & Cybersicherheit - Interaktive Lernplattform</title>
+    <meta name="description" content="Lernen Sie spielerisch die wichtigsten Aspekte von Datenschutz und Cybersicherheit kennen.">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/demos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">
+                <span class="header__icon">🔐</span>
+                Datenschutz & Cybersicherheit
+            </h1>
+            <p class="header__subtitle">Lernen Sie spielerisch, wie Sie sich im digitalen Raum sicher bewegen</p>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="intro">
+                <h2 class="intro__title">Entdecken Sie die wichtigsten Sicherheitsthemen</h2>
+                <p class="intro__text">
+                    Klicken Sie auf eines der Themen unten, um eine interaktive Simulation zu starten. 
+                    Lernen Sie durch praktische Übungen, wie Sie sich vor digitalen Bedrohungen schützen können.
+                </p>
+            </section>
+
+            <section class="topics">
+                <div class="topics__grid">
+                    <article class="topic-card" data-topic="phishing">
+                        <div class="topic-card__icon">📧</div>
+                        <h3 class="topic-card__title">Phishing erkennen</h3>
+                        <p class="topic-card__description">
+                            Lernen Sie, betrügerische E-Mails zu identifizieren und sich vor Phishing-Angriffen zu schützen.
+                        </p>
+                        <button class="topic-card__button" aria-label="Phishing-Demo starten">Demo starten</button>
+                    </article>
+
+                    <article class="topic-card" data-topic="wifi">
+                        <div class="topic-card__icon">📶</div>
+                        <h3 class="topic-card__title">WLAN-Sicherheit</h3>
+                        <p class="topic-card__description">
+                            Erfahren Sie, wie Sie öffentliche WLAN-Netzwerke sicher nutzen und Ihre Daten schützen.
+                        </p>
+                        <button class="topic-card__button" aria-label="WLAN-Sicherheits-Demo starten">Demo starten</button>
+                    </article>
+
+                    <article class="topic-card" data-topic="passwords">
+                        <div class="topic-card__icon">🔑</div>
+                        <h3 class="topic-card__title">Sichere Passwörter</h3>
+                        <p class="topic-card__description">
+                            Erstellen Sie starke Passwörter und lernen Sie bewährte Praktiken für die Passwortsicherheit.
+                        </p>
+                        <button class="topic-card__button" aria-label="Passwort-Generator-Demo starten">Demo starten</button>
+                    </article>
+
+                    <article class="topic-card" data-topic="2fa">
+                        <div class="topic-card__icon">🛡️</div>
+                        <h3 class="topic-card__title">Zwei-Faktor-Authentifizierung</h3>
+                        <p class="topic-card__description">
+                            Verstehen Sie, wie die Zwei-Faktor-Authentifizierung Ihre Konten zusätzlich absichert.
+                        </p>
+                        <button class="topic-card__button" aria-label="2FA-Demo starten">Demo starten</button>
+                    </article>
+
+                    <article class="topic-card" data-topic="updates">
+                        <div class="topic-card__icon">🔄</div>
+                        <h3 class="topic-card__title">Software-Updates</h3>
+                        <p class="topic-card__description">
+                            Lernen Sie, warum regelmäßige Updates wichtig sind und wie Sie diese sicher durchführen.
+                        </p>
+                        <button class="topic-card__button" aria-label="Update-Demo starten">Demo starten</button>
+                    </article>
+
+                    <article class="topic-card" data-topic="backup">
+                        <div class="topic-card__icon">💾</div>
+                        <h3 class="topic-card__title">Datensicherung</h3>
+                        <p class="topic-card__description">
+                            Erfahren Sie, wie Sie Ihre wichtigen Daten durch regelmäßige Backups schützen können.
+                        </p>
+                        <button class="topic-card__button" aria-label="Backup-Demo starten">Demo starten</button>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Demo Modal Container -->
+    <div class="modal" id="demoModal" aria-hidden="true">
+        <div class="modal__backdrop" aria-label="Demo schließen"></div>
+        <div class="modal__content">
+            <header class="modal__header">
+                <h2 class="modal__title" id="modalTitle">Demo</h2>
+                <button class="modal__close" aria-label="Demo schließen">✕</button>
+            </header>
+            <div class="modal__body" id="modalBody">
+                <!-- Demo content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">
+                © 2025 Cybersicherheit Lernplattform. 
+                Diese Website dient ausschließlich Bildungszwecken.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/demos.js"></script>
+</body>
+</html>

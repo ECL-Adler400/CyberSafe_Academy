@@ -1,0 +1,572 @@
+/* Demo-specific styles */
+
+/* Common Demo Elements */
+.demo {
+    min-height: 400px;
+}
+
+.demo__header {
+    background: #f8f9fa;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.demo__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.demo__instruction {
+    color: #5a6c7d;
+    font-size: 0.95rem;
+}
+
+.demo__feedback {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    font-weight: 500;
+    display: none;
+}
+
+.demo__feedback.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.demo__feedback.warning {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+.demo__feedback.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Phishing Demo */
+.email-inbox {
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    background: white;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.email-inbox__header {
+    background: #4285f4;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.email-inbox__title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.email-list {
+    list-style: none;
+}
+
+.email-item {
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.email-item:hover {
+    background: #f8f9fa;
+}
+
+.email-item.suspicious {
+    border-left: 4px solid #dc3545;
+}
+
+.email-item.safe {
+    border-left: 4px solid #28a745;
+}
+
+.email-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.email-sender {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.email-time {
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+.email-subject {
+    font-weight: 500;
+    color: #495057;
+    margin-bottom: 0.25rem;
+}
+
+.email-preview {
+    color: #6c757d;
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+.email-flags {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.email-flag {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.email-flag.urgent {
+    background: #dc3545;
+    color: white;
+}
+
+.email-flag.external {
+    background: #ffc107;
+    color: #212529;
+}
+
+/* WiFi Demo */
+.phone-simulator {
+    max-width: 300px;
+    margin: 0 auto;
+    background: #1a1a1a;
+    border-radius: 2rem;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.phone-screen {
+    background: white;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    min-height: 500px;
+}
+
+.phone-header {
+    background: #007aff;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.wifi-list {
+    list-style: none;
+}
+
+.wifi-item {
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.wifi-item:hover {
+    background: #f8f9fa;
+}
+
+.wifi-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.wifi-name {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.wifi-security {
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+.wifi-signal {
+    font-size: 1.25rem;
+}
+
+.wifi-icon {
+    font-size: 1.5rem;
+}
+
+.wifi-icon.secure {
+    color: #28a745;
+}
+
+.wifi-icon.unsecure {
+    color: #dc3545;
+}
+
+/* Password Demo */
+.password-generator {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+.password-controls {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.control-label {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.control-input {
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.generated-password {
+    background: #f8f9fa;
+    border: 2px solid #dee2e6;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-family: 'Courier New', monospace;
+    font-size: 1.125rem;
+    text-align: center;
+    word-break: break-all;
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.password-strength {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.password-strength.weak {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.password-strength.medium {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.password-strength.strong {
+    background: #d4edda;
+    color: #155724;
+}
+
+.password-tips {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #e3f2fd;
+    border-radius: 0.5rem;
+    border-left: 4px solid #2196f3;
+}
+
+.password-tips h4 {
+    color: #1976d2;
+    margin-bottom: 0.5rem;
+}
+
+.password-tips ul {
+    color: #424242;
+    font-size: 0.875rem;
+}
+
+/* 2FA Demo */
+.auth-simulator {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.login-form {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+.form-button {
+    width: 100%;
+    padding: 0.75rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.form-button:hover {
+    background: #0056b3;
+}
+
+.form-button:disabled {
+    background: #6c757d;
+    cursor: not-allowed;
+}
+
+.auth-step {
+    display: none;
+}
+
+.auth-step.active {
+    display: block;
+}
+
+.verification-code {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.verification-code input {
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 2px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.verification-code input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Update Demo */
+.update-center {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.update-header {
+    background: #17a2b8;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.update-list {
+    list-style: none;
+}
+
+.update-item {
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.update-info h4 {
+    color: #2c3e50;
+    margin-bottom: 0.25rem;
+}
+
+.update-info p {
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+.update-badge {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.update-badge.security {
+    background: #dc3545;
+    color: white;
+}
+
+.update-badge.feature {
+    background: #28a745;
+    color: white;
+}
+
+.update-badge.bugfix {
+    background: #ffc107;
+    color: #212529;
+}
+
+.update-button {
+    padding: 0.5rem 1rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.update-button:hover {
+    background: #0056b3;
+}
+
+/* Backup Demo */
+.backup-wizard {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.backup-step {
+    display: none;
+    padding: 2rem;
+}
+
+.backup-step.active {
+    display: block;
+}
+
+.backup-progress {
+    background: #e9ecef;
+    border-radius: 0.5rem;
+    height: 0.5rem;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+.backup-progress-bar {
+    background: #28a745;
+    height: 100%;
+    transition: width 0.3s ease;
+    width: 0%;
+}
+
+.backup-options {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.backup-option {
+    border: 2px solid #dee2e6;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.backup-option:hover {
+    border-color: #007bff;
+    background: #f8f9fa;
+}
+
+.backup-option.selected {
+    border-color: #007bff;
+    background: #e3f2fd;
+}
+
+.backup-option h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.backup-option p {
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+/* Responsive adjustments for demos */
+@media (max-width: 768px) {
+    .phone-simulator {
+        max-width: 280px;
+    }
+    
+    .verification-code input {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.25rem;
+    }
+    
+    .demo__header {
+        padding: 1rem;
+    }
+    
+    .password-generator,
+    .login-form,
+    .backup-step {
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,50 @@
+# Development files
+.DS_Store
+*.log
+*.tmp
+*.temp
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node modules (if added later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output (if build process is added later)
+dist/
+build/
+*.min.js
+*.min.css
+
+# Temporary files
+/tmp/
+temp/
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+
+# Cache
+.cache/
+*.cache
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Backup files
+*.bak
+*.backup
