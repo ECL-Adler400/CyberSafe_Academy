@@ -1,3 +1,4 @@
+![Logo](./LOGO.png)
 # 🛡️ Cyber Safe Academy
 
 <div align="center">
